@@ -11,7 +11,7 @@ class BfmEvents extends Module
     {
         $this->name = 'bfmevents';
         $this->tab = 'administration';
-        $this->version = '1.1.2';
+        $this->version = '1.1.3';
         $this->author = 'Miguel Figueroa';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = [
@@ -346,7 +346,7 @@ class BfmEvents extends Module
 
         foreach ($values as $key => $value) {
             if (in_array($key, $this->table_fields)) {
-                $data[$key] = $value;
+                $data[$key] = str_replace('\'', '&#39;', $value);
             }
         }
 
