@@ -1,0 +1,76 @@
+.event-details {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.event-title {
+    background-color: #563732;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.event-title > span {
+    margin-right: 10px;
+}
+
+.event-body .event-time,
+.event-body .event-location {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.event-calendar {
+    text-align: center;
+}
+
+.event-calendar a {
+    text-decoration: underline;
+}
+
+.event-get-directions {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.event-get-directions p {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-get-directions p input {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 1rem;
+    border-radius: 1rem;
+}
+
+.event-get-directions p button {
+    background-color: #563732;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.event-get-directions,
+.event-description {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .event-body .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .event-get-directions form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
